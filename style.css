@@ -16,7 +16,7 @@ body{
 .primary-button{
     outline: 0;
     border: 0;
-    padding: 10px 15px;
+    padding: 10px 30px;
     background-color: rgb(240, 28, 99);
     color: white;
     font-size: 18px;
@@ -60,6 +60,7 @@ body{
 .first-article{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
 }
 .text-left{
     display: flex;
@@ -84,3 +85,18 @@ body{
 .photo img{
     width: 80%;
 }
+/* sponsor logo start  */
+
+.sponsor-logo{
+    display: inline-block;
+    border-top: 2px solid rgba(128, 128, 128, 0.534);
+    border-bottom:  1px solid rgba(128, 128, 128, 0.534);
+    border-radius: 10px;
+    margin: 0 100px;
+ 
+   
+    
+}
+.sponsor-logo img{
+    padding: 15px 15px;
+} 
