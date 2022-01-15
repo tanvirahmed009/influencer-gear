@@ -180,7 +180,7 @@ body{
 /* footer section start */
 
 footer{
-    background-color: rgb(240, 28, 99);
+    background-color: rgba(240, 28, 99, 0.808);
     color: white;
     text-align: center;
     padding: 40px 0;
