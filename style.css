@@ -33,6 +33,9 @@ body{
 .primary-button:hover a{
     background-color:  rgb(143, 9, 54);
 }
+.primary-color{
+    color:rgb(240, 28, 99) ;
+}
 
 
 /*--------------------
@@ -49,10 +52,16 @@ body{
 .navigation{
     display: flex;
 }
+
 .navigation li {
     list-style: none;
     cursor: pointer;
     
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+  
 }
 .navigation li:hover a{
     background-color:rgb(240, 28, 99);
@@ -65,6 +74,7 @@ body{
     font-weight: 700;  
     padding: 5px 15px; 
 }
+
 /* article start  */
 
 .first-article{
@@ -180,3 +190,76 @@ footer>p>a {
     color: white;
     padding: 0 5px;
 }
+
+/* ===============
+Media Queries 
+================*/
+
+/* mobile device */
+
+@media only screen and (max-width:688px) {
+    .container{
+       width: 100%;
+   }
+  .navigation li{
+      display: none;
+  }
+
+    
+    .menu-icon{
+        display: block;  
+    }
+    .menu-icon li a{
+        text-decoration: none;
+        outline: 0;
+        color:white;
+        background-color:rgb(240, 28, 99) ;
+       padding: 5px;
+       border-radius: 3px;
+        font-size: 20px;
+    }
+    .gears,
+    .first-article {
+        grid-template-columns: 1fr ;
+        width: 80%;
+    }
+    .gear{
+        flex-direction: column;
+    }
+    .first-article>.photo img{
+        width: 80%;
+        padding-top: 40px;
+    }
+    .first-article>.photo iframe{
+        width: 80%;
+        padding-top: 40px;
+    }
+}
+
+/* =====tablet device===== */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .gears,
+    .first-article {
+        grid-template-columns:repeat(2, 1fr) ;
+        width: 80%;
+    }
+    .gear{
+        flex-direction: column;
+    }
+    .first-article>.photo img{
+        width: 80%;
+        padding-top: 40px;
+    }
+    .first-article>.photo iframe{
+        width: 100%;
+        padding-top: 40px;
+    }
+}
+
+/* ==========================================================
+========================The End=============================
+ ========================================================= */
